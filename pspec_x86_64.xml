@@ -1,0 +1,52 @@
+<PISI>
+    <Source>
+        <Name>dtc</Name>
+        <Packager>
+            <Name>Alexander Koskovich</Name>
+            <Email>zvnexus@outlook.com</Email>
+        </Packager>
+        <License>BSD-2-Clause</License>
+        <License>GPL-2.0</License>
+        <PartOf>programming.library</PartOf>
+        <Summary xml:lang="en">Device Tree Compiler</Summary>
+        <Description xml:lang="en">Toolchain for working with device tree source and binary files and also libfdt, a utility library for reading and manipulating the binary format.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>dtc</Name>
+        <Summary xml:lang="en">Device Tree Compiler</Summary>
+        <Description xml:lang="en">Toolchain for working with device tree source and binary files and also libfdt, a utility library for reading and manipulating the binary format.
+</Description>
+        <PartOf>programming.library</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/convert-dtsv0</Path>
+            <Path fileType="executable">/usr/bin/dtc</Path>
+            <Path fileType="executable">/usr/bin/dtdiff</Path>
+            <Path fileType="executable">/usr/bin/fdtdump</Path>
+            <Path fileType="executable">/usr/bin/fdtget</Path>
+            <Path fileType="executable">/usr/bin/fdtoverlay</Path>
+            <Path fileType="executable">/usr/bin/fdtput</Path>
+            <Path fileType="header">/usr/include/fdt.h</Path>
+            <Path fileType="header">/usr/include/libfdt.h</Path>
+            <Path fileType="header">/usr/include/libfdt_env.h</Path>
+            <Path fileType="library">/usr/lib/libfdt-1.5.0.so</Path>
+            <Path fileType="library">/usr/lib/libfdt.a</Path>
+            <Path fileType="library">/usr/lib/libfdt.so</Path>
+            <Path fileType="library">/usr/lib/libfdt.so.1</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/__pycache__/libfdt.cpython-36.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/_libfdt.cpython-36m-x86_64-linux-gnu.so</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/libfdt-1.5.0_dirty-py3.6.egg-info</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/libfdt.py</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2020-02-03</Date>
+            <Version>1.5.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Alexander Koskovich</Name>
+            <Email>zvnexus@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>

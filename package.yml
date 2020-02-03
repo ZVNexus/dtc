@@ -1,0 +1,27 @@
+name       : dtc
+version    : 1.5.1
+release    : 1
+source     :
+    - git|https://git.kernel.org/pub/scm/utils/dtc/dtc.git : aed61a428a40f86a9ed1535ba938e48cb0551418
+license    :
+    - BSD-2-Clause
+    - GPL-2.0
+component  : programming.library
+summary    : Device Tree Compiler
+description: |
+    Toolchain for working with device tree source and binary files and also libfdt, a utility library for reading and manipulating the binary format.
+builddeps  :
+    - python3-devel
+    - swig
+rundeps  :
+    - valgrind
+patterns :
+    - /usr/bin
+    - /usr/include
+    - /usr/lib
+setup      : |
+    sed -i 's/-Werror//' $workdir/Makefile
+build      : |
+    %make
+install    : |
+    DESTDIR=$installdir %make PREFIX=$installdir/usr SETUP_PREFIX=$installdir/usr install
